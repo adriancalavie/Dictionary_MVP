@@ -1,0 +1,65 @@
+﻿<Page x:Class="Dictionary_MVP.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Dictionary_MVP"
+      xmlns:properties="clr-namespace:Dictionary_MVP.Properties" 
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="Logo" Source="/Resources/logo.png" Stretch="None" RenderTransformOrigin="0.5,0.5" Margin="116,-5,-119,-94" Grid.ColumnSpan="2" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="0.5" ScaleY="0.5"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <TextBlock x:Name="Title" Grid.Column="1" 
+                   Text="Dictionary" 
+                   HorizontalAlignment="Center"
+                   Width="420" 
+                   FontFamily="Broadway"
+                   Foreground="#FF006699" 
+                   FontSize="72" 
+                   Margin="55,41,54,293"/>
+
+        <Button x:Name="AdminButton" Grid.Column="0" 
+                Content="Admin" Height="102" 
+                VerticalAlignment="Bottom" 
+                Background="#00FF0000" 
+                BorderBrush="Transparent"
+                FontSize="36" 
+                FontFamily="Arial Black"
+                FontWeight="Bold" 
+                Foreground="#FF006699" RenderTransformOrigin="0.586,0.21" 
+                Click="AdminButton_Click" Margin="0,0,0,224" />
+        <Button x:Name="SearchButton" Grid.Column="0" 
+            Content="Search" Height="102" 
+            VerticalAlignment="Bottom" 
+            Background="#00FF0000" 
+            BorderBrush="Transparent"
+            FontSize="36" 
+            FontFamily="Arial Black"
+            FontWeight="Bold" 
+            Foreground="#FF006699" RenderTransformOrigin="0.586,0.21" 
+            Click="SearchButton_Click" Margin="0,0,0,117" />
+        <Button x:Name="PlayButton" Grid.Column="0" 
+            Content="Play" Height="102" 
+            VerticalAlignment="Bottom" 
+            Background="#00FF0000" 
+            BorderBrush="Transparent"
+            FontSize="36" 
+            FontFamily="Arial Black"
+            FontWeight="Bold" 
+            Foreground="#FF006699" RenderTransformOrigin="0.586,0.21" 
+            Click="PlayButton_Click" Margin="0,0,0,10" />
+
+    </Grid>
+</Page>
